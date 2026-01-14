@@ -1,0 +1,157 @@
+
+.todo {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.todo__titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.formulario__input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.formulario__boton {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tarea {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tarea__checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.tarea__info {
+    flex: 1;
+}
+
+.tarea__titulo {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.tarea__titulo--completada {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.tarea__descripcion {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.tarea__descripcion--completada {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.tarea__acciones {
+    display: flex;
+    gap: 5px;
+}
+.tarea__boton {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: white;
+}
+
+.tarea__boton--azul {
+    background: #2196F3;
+}
+
+.tarea__boton--naranja {
+    background: #ff9800;
+}
+
+.tarea__boton--rojo {
+    background: #f44336;
+}
+.guardarEdicion{
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* BLOQUE: modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__contenido {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+    
+}
+
+.modal__cerrar {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.modal__body h2 {
+    margin-bottom: 10px;
+    
+}
+
+.modal__body p {
+    color: #666;
+    margin-bottom: 20px;
+    
+}

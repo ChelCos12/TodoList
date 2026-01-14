@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="todo">
+        <h1 class="todo__titulo">Lista de Tareas</h1>
+        
+        <div class="formulario">
+            <input type="text" class="formulario__input" id="titulo" placeholder="Título">
+            <input type="text" class="formulario__input" id="descripcion" placeholder="Descripción">
+            <button class="formulario__boton" id="btn-agregar">Agregar</button>
+        </div>
+        
+        <div class="lista" id="lista-tareas"></div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal__contenido">
+            <span class="modal__cerrar">&times;</span>
+            <div class="modal__body" id="modal-body"></div>
+        </div>
+    </div>
+    <script src="codigo.js"></script>
+</body>
+</html>
