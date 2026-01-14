@@ -138,10 +138,13 @@
 }
 
 .modal__cerrar {
+    background: #f44336;
+    border-radius: 5px;
+    color: white;
     position: absolute;
     right: 15px;
     top: 10px;
-    font-size: 28px;
+    font-size: 20px;
     cursor: pointer;
 }
 
